@@ -12,7 +12,7 @@ db_config = {
     'host': 'localhost',
     'database': 'bookstore',
     'user': 'root',
-    'password': 'Mohan@1234'
+    'password': os.getenv("DB_PASS")
 }
 app = Flask(__name__)
 
