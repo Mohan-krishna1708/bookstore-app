@@ -1,4 +1,4 @@
-# 📚 Book Store Web Application
+# 📚 Bookstore Web Application
 
 A full-stack Book Store web application built using **Flask**, **MySQL**, and **HTML/CSS**.
 Users can browse books, add to cart, and place orders. Admin can manage products.
