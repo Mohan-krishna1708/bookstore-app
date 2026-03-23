@@ -1,134 +1,104 @@
 # 📚 Book Store Web Application
 
-A full-stack Book Store web application built using **Flask (Python)**, **MySQL**, and **HTML/CSS**.
-This app allows users to browse books, add them to cart, and place orders, while admins can manage products.
+A full-stack Book Store web application built using **Flask**, **MySQL**, and **HTML/CSS**.
+Users can browse books, add to cart, and place orders. Admin can manage products.
 
 ---
 
 ## 🚀 Features
 
-### 👤 User Features
+### 👤 User
 
-* User Signup with OTP verification (Email)
-* Secure Login (Password hashing)
-* Browse available books
-* Add books to cart
-* View shopping cart
-* Checkout using Razorpay
-* Forgot Password with OTP
+* Signup with OTP (Email)
+* Secure Login
+* Browse books
+* Add to cart
+* View cart
+* Checkout
 
----
+### 🛠️ Admin
 
-### 🛠️ Admin Features
-
-* Admin Login
-* Add new books
-* View all books
-* Delete books
+* Admin login
+* Add products
+* View/manage products
+* Delete products
 
 ---
 
 ## 🏗️ Tech Stack
 
-* **Backend:** Flask (Python)
-* **Database:** MySQL
-* **Frontend:** HTML, CSS
-* **Email Service:** SMTP (Gmail App Password)
-* **Payment Integration:** Razorpay
+* Backend: Flask (Python)
+* Database: MySQL
+* Frontend: HTML, CSS
+* Email: SMTP (Gmail App Password)
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](screenshots/home.png)
+
+### 📝 Signup Page
+![Signup](screenshots/signup.png)
+
+### 🔐 Login Page
+![Login](screenshots/login.png)
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 🛒 Cart
+![Cart](screenshots/cart.png)
 
 ---
 
 ## 📁 Project Structure
 
 ```
-BOOK STORE/
+bookstore-app/
 │
 ├── app.py
-├── templates/
-│   ├── admin_login.html
-│   ├── admin_dashboard.html
-│   ├── admin_addproducts.html
-│   ├── admin_manageproducts.html
-│   ├── user_signup.html
-│   ├── user_login.html
-│   ├── user_home.html
-│   ├── shopping_cart.html
-│   ├── otpverify.html
-│   ├── errorpage.html
-│   └── forgot_password*.html
+├── requirements.txt
+├── .gitignore
+├── README.md
 │
+├── templates/
 ├── static/
 │   └── images/
-│       ├── logo.png
-│       └── homeimage.png
+│
+├── screenshots/
 ```
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone Repository
+### 1. Clone repo
 
 ```
-git clone https://github.com/YOUR_USERNAME/bookstore-app.git
+git clone https://github.com/Mohan-krishna1708/bookstore-app.git
 cd bookstore-app
 ```
 
----
-
-### 2️⃣ Install Dependencies
+### 2. Install dependencies
 
 ```
-pip install flask pymysql
+pip install -r requirements.txt
 ```
 
----
+### 3. Setup database
 
-### 3️⃣ Setup MySQL Database
+* Create MySQL database: `bookstore`
+* Update credentials in `app.py`
 
-Create database:
-
-```
-CREATE DATABASE bookstore;
-```
-
-Create required tables (USERS, PRODUCTS, CART, ORDERS, ORDER_DETAILS)
-
----
-
-### 4️⃣ Configure Database in `app.py`
-
-```
-db_config = {
-    'host': 'localhost',
-    'database': 'bookstore',
-    'user': 'root',
-    'password': 'yourpassword'
-}
-```
-
----
-
-### 5️⃣ Setup Email (IMPORTANT)
-
-* Enable **2-Step Verification**
-* Generate **App Password**
-* Set environment variables:
-
-```
-set EMAIL_USER=your_email@gmail.com
-set EMAIL_PASS=your_app_password
-```
-
----
-
-### 6️⃣ Run Application
+### 4. Run app
 
 ```
 python app.py
 ```
 
-Open browser:
+Open:
 
 ```
 http://127.0.0.1:5006
@@ -136,26 +106,10 @@ http://127.0.0.1:5006
 
 ---
 
-## 💳 Payment Integration
+## 🔒 Notes
 
-* Uses Razorpay test key
-* Can be replaced with live key for production
-
----
-
-## 🔒 Security Features
-
-* Password hashing using `werkzeug.security`
-* Email-based OTP verification
-* Secure database queries
-
----
-
-## 📌 Notes
-
-* Do NOT upload real passwords to GitHub
-* Use environment variables for sensitive data
-* This project is for learning/demo purposes
+* Do not expose passwords in code
+* Use environment variables for email and DB credentials
 
 ---
 
@@ -165,6 +119,6 @@ Mohan Krishna
 
 ---
 
-## ⭐ If you like this project
+## ⭐ Support
 
-Give it a ⭐ on GitHub!
+If you like this project, give it a ⭐ on GitHub!
