@@ -45,8 +45,8 @@ Users can browse books, add to cart, and place orders. Admin can manage products
 ### 🔐 Login Page
 ![Login](screenshots/login.png)
 
-### 📊 Dashboard
-![Dashboard](screenshots/dashboard.png)
+### 📊 Products
+![products](screenshots/manage_products.png)
 
 ### 🛒 Cart
 ![Cart](screenshots/cart.png)
